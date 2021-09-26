@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 12312 -->
+    <!-- <div class="body-list">
+        <p>
+            <span>1</span>
+            <span>2</span>
+        </p>
+        <p>
+            <span>3</span>
+            <span>4</span>
+        </p>
+        <p>
+            <span>5</span>
+            <span>6</span>
+        </p>
+
+    </div>
+    <div id="container">
+
+    </div>
+    <div>
+        <p id="parEle">我是父元素 <span id="sonEle">我是子元素</span></p>
+    </div> -->
+
+
+
+
+</body>
+
+</html>
+<script type="text/javascript">
+    var sonEle = document.getElementById('sonEle');
+    var parEle = document.getElementById('parEle');
+
+    parEle.addEventListener('click', function () {
+        alert('父级 冒泡');
+    }, false);
+    parEle.addEventListener('click', function () {
+        alert('父级 捕获');
+    }, true);
+
+    sonEle.addEventListener('click', function () {
+        alert('子级冒泡');
+    }, false);
+    sonEle.addEventListener('click', function () {
+        alert('子级捕获');
+    }, true);
+
+</script>

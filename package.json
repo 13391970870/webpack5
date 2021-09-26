@@ -1,0 +1,22 @@
+{
+  "name": "webpack5",
+  "private": true,
+  "scripts": {
+    "build": "webpack --config ./build/webpack.config.js",
+    "start": "webpack serve --config ./build/webpack.config.js --open",
+    "bundle-report": "webpack-bundle-analyzer --port 8123 dist/stats.json"
+  },
+  "devDependencies": {
+    "css-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.52.0",
+    "webpack-bundle-analyzer": "^4.4.2",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.1.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "ts-loader": "^9.2.5"
+  }
+}
